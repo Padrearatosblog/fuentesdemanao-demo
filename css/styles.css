@@ -1,0 +1,161 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins;
+background:#0b0b0b;
+color:white;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:rgba(0,0,0,0.45);
+  backdrop-filter:blur(6px);
+  z-index:100;
+}
+
+.logo{
+  font-family:"Playfair Display", serif;
+  font-size:22px;
+  letter-spacing:2px;
+  color:white;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.45)),
+    url("../img/hero.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.hero-text h1{
+font-family:Playfair Display;
+font-size:60px;
+letter-spacing:4px;
+}
+
+.tagline{
+margin-top:10px;
+font-size:20px;
+}
+
+.sub{
+margin-top:10px;
+opacity:0.8;
+}
+
+section{
+padding:100px 20px;
+text-align:center;
+}
+
+.concepto p{
+max-width:700px;
+margin:auto;
+margin-top:20px;
+opacity:0.8;
+line-height:1.6;
+}
+
+.ritmo-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.ritmo-grid div{
+border:1px solid rgba(255,255,255,0.2);
+padding:15px 25px;
+border-radius:30px;
+}
+
+.cocteles-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+max-width:900px;
+margin:40px auto;
+}
+
+.coctel{
+border:1px solid rgba(255,255,255,0.1);
+padding:20px;
+border-radius:10px;
+}
+
+.coctel h3{
+margin-bottom:10px;
+}
+
+.map-btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 25px;
+border:1px solid white;
+text-decoration:none;
+color:white;
+}
+
+footer{
+padding:40px;
+text-align:center;
+opacity:0.6;
+}
+
+header.scrolled{
+background:#000;
+transition:0.3s;
+}
+
+.hero-text{
+animation:fadeHero 1.5s ease;
+}
+
+@keyframes fadeHero{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 30px;
+border:1px solid white;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.hero-btn:hover{
+background:white;
+color:black;
+}
