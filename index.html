@@ -1,111 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Fuentes de Manao</title>
-
-<link rel="stylesheet" href="css/styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuentes de Manao | Demo</title>
+  <meta
+    name="description"
+    content="Fuentes de Manao, bar con años de historia en la noche de Pamplona. Cócteles, ritmo y sabor latino."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Ir al inicio">
+        <span class="brand-line">Fuentes</span>
+        <span class="brand-line">de Manao</span>
+      </a>
 
-<header>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<div class="logo">FUENTES DE MANAO</div>
+      <nav class="site-nav" id="siteNav">
+        <a href="#concepto">Concepto</a>
+        <a href="#ambiente">Ambiente</a>
+        <a href="#cocteles">Cócteles</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+    </div>
+  </header>
 
-<nav>
-<a href="#concepto">Concepto</a>
-<a href="#ritmo">Ambiente</a>
-<a href="#cocteles">Cócteles</a>
-<a href="#ubicacion">Ubicación</a>
-</nav>
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow">Pamplona · Noche · Sabor latino</p>
+        <h1>FUENTES DE MANAO</h1>
+        <p class="hero-tagline">La noche empieza aquí</p>
+        <p class="hero-subtitle">Cócteles · Ritmo · Sabor latino</p>
+        <div class="hero-actions">
+          <a href="#concepto" class="btn btn-primary">Descubrir el ambiente</a>
+          <a href="#cocteles" class="btn btn-secondary">Ver cócteles</a>
+        </div>
+      </div>
+    </section>
 
-</header>
-<section class="hero"></section>
+    <section class="section section-dark" id="concepto">
+      <div class="container narrow reveal">
+        <p class="section-kicker">Un clásico de la noche</p>
+        <h2>Sabor latino en Pamplona</h2>
+        <p class="lead">
+          Fuentes de Manao es un bar con años de historia en la noche de Pamplona,
+          un punto de encuentro donde el ambiente, la música y los cócteles crean
+          el lugar perfecto para disfrutar la noche.
+        </p>
+      </div>
+    </section>
 
-<section class="concepto" id="concepto">
+    <section class="section section-image" id="ambiente">
+      <div class="section-image-overlay"></div>
+      <div class="container reveal">
+        <div class="feature-card">
+          <p class="section-kicker">Ambiente</p>
+          <h2>Noches con ritmo latino</h2>
+          <p>
+            Un espacio pensado para empezar la noche con personalidad: luces,
+            energía, buena compañía y un ambiente que invita a quedarse.
+          </p>
 
-<h2>Sabor latino en Pamplona</h2>
+          <div class="tags">
+            <span>Salsa</span>
+            <span>Bachata</span>
+            <span>Ritmos latinos</span>
+            <span>Buena energía</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>
-Fuentes de Manao es un bar con años de historia en la noche de Pamplona,
-un punto de encuentro donde el ambiente, la música y los cócteles crean
-el lugar perfecto para disfrutar la noche.
-</p>
-<a href="#concepto" class="hero-btn">Descubrir el ambiente</a>
-</section>
+    <section class="section section-dark" id="cocteles">
+      <div class="container reveal">
+        <p class="section-kicker">Carta destacada</p>
+        <h2>Nuestros cócteles</h2>
+        <p class="section-intro">
+          Una selección sencilla y atractiva para transmitir el estilo del bar en
+          la demo.
+        </p>
 
-<section class="ritmo" id="ritmo">
+        <div class="cocktail-grid">
+          <article class="cocktail-card">
+            <h3>Mojito</h3>
+            <p>Ron · Lima · Hierbabuena</p>
+          </article>
 
-<h2>Noches de ritmo latino</h2>
+          <article class="cocktail-card">
+            <h3>Caipiriña</h3>
+            <p>Cachaça · Lima · Azúcar</p>
+          </article>
 
-<div class="ritmo-grid">
+          <article class="cocktail-card">
+            <h3>Daiquiri</h3>
+            <p>Ron · Lima · Azúcar</p>
+          </article>
 
-<div>Salsa</div>
-<div>Bachata</div>
-<div>Ritmos latinos</div>
+          <article class="cocktail-card">
+            <h3>Piña Colada</h3>
+            <p>Ron · Coco · Piña</p>
+          </article>
 
-</div>
+          <article class="cocktail-card">
+            <h3>Cuba Libre</h3>
+            <p>Ron · Cola · Lima</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section class="section section-dark section-location" id="ubicacion">
+      <div class="container narrow reveal">
+        <p class="section-kicker">Ubicación</p>
+        <h2>Te esperamos</h2>
+        <p class="lead">
+          Un bar con identidad propia en la noche pamplonesa, pensado para quienes
+          buscan ambiente, música y una noche diferente.
+        </p>
 
-<section class="cocteles" id="cocteles">
+        <div class="location-box">
+          <p class="location-name">Fuentes de Manao</p>
+          <p class="location-city">Pamplona, Navarra</p>
+          <a
+            class="btn btn-primary"
+            href="https://www.google.com/maps/search/?api=1&query=Fuentes+de+Manao+Pamplona"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver ubicación
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<h2>Nuestros cócteles</h2>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Fuentes de Manao</p>
+        <p class="footer-copy">Cócteles · Ritmo · Sabor latino</p>
+      </div>
 
-<div class="cocteles-grid">
+      <a
+        class="footer-link"
+        href="https://www.instagram.com/fuentesdemanao/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </div>
+  </footer>
 
-<div class="coctel">
-<h3>Mojito</h3>
-<p>Ron · Lima · Hierbabuena</p>
-</div>
-
-<div class="coctel">
-<h3>Caipiriña</h3>
-<p>Cachaça · Lima · Azúcar</p>
-</div>
-
-<div class="coctel">
-<h3>Daiquiri</h3>
-<p>Ron · Lima · Azúcar</p>
-</div>
-
-<div class="coctel">
-<h3>Piña Colada</h3>
-<p>Ron · Coco · Piña</p>
-</div>
-
-<div class="coctel">
-<h3>Cuba Libre</h3>
-<p>Ron · Cola · Lima</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="ubicacion" id="ubicacion">
-
-<h2>Te esperamos</h2>
-
-<p>Pamplona</p>
-
-<a class="map-btn" href="#">Ver ubicación</a>
-
-</section>
-
-<footer>
-
-<p>Fuentes de Manao · Pamplona</p>
-
-</footer>
-
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
